@@ -1,5 +1,5 @@
 baseURL: "https://mugglewei.github.io/learning_compass"
-title: 学科体系指南
+title: 学科自学指南
 paginate: 5
 theme: PaperMod
 
@@ -76,7 +76,7 @@ params:
 
     socialIcons:
         - name: github
-          url: "https://github.com/MuggleWei"
+          url: "https://github.com/MuggleWei/learning_compass"
         # - name: email
         #   url: "mailto:mugglewei@gmail.com"
         #- name: KoFi

@@ -1,5 +1,5 @@
 {{ if or .Params.graphviz .Site.Params.graphviz }}
-<script type="text/javascript" src="/viz@v1.8.1/viz.js"> </script>
+<script type="text/javascript" src="{{ "/viz@v1.8.1/viz.js" | relURL }}"> </script>
 <script type="text/javascript">
     (function(){
 		var vizPrefix = "language-graphviz";
