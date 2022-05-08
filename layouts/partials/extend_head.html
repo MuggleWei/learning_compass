@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="{{ "/customize/style.css" | relURL }}">
+
+{{ if or .Params.math .Site.Params.math }}
+	<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">-->
+	<!--<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>-->
+	<!--<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>-->
+
+	<link rel="stylesheet" href="{{ "/katex@0.15.2/katex.min.css" | relURL }}" crossorigin="anonymous">
+	<script defer src="{{ "/katex@0.15.2/katex.min.js" | relURL }}" crossorigin="anonymous"></script>
+	<script defer src="{{ "/katex@0.15.2/contrib/auto-render.min.js" | relURL }}" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+{{ end }}

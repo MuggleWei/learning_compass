@@ -1,0 +1,15 @@
+{{ if or .Params.graphviz .Site.Params.graphviz }}
+<script type="text/javascript" src="/viz@v1.8.1/viz.js"> </script>
+<script type="text/javascript">
+    (function(){
+		var vizPrefix = "language-graphviz";
+        Array.prototype.forEach.call(document.querySelectorAll("[class^=" + vizPrefix + "]"), function (x) {
+            var engine = "dot";
+            var image = new DOMParser().parseFromString(Viz(x.innerText, { format: "svg", engine: engine }), "image/svg+xml");
+            x.parentNode.insertBefore(image.documentElement, x);
+            x.style.display = 'none';
+            x.parentNode.style.setProperty("background-color", "white", "important");
+        });
+    })();
+</script>
+{{ end }}
