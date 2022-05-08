@@ -3197,7 +3197,8 @@
 例子: 搜索&amp;quot;信息与计算科学&amp;quot;。
 课程  搜索:&amp;ldquo;课程名称&amp;rdquo;，可以找到课程对应的页面，其中会包含课程的不同公开课的连接，以及相关的课件连接。
 例子: 搜索&amp;quot;数学分析&amp;quot;
-如何参与  TODO:</description>
+如何参与 如何提交学科和课程的信息  有三种方式能让你参与到本项目中来，这里从简单到困难
+ 如果你从来没有使用过git，那么您可以通过邮件的方式给项目维护者以建议。当前项目维护者邮箱: mugglewei@gmail.com。发送邮件可以是任意格式，但是建议参考一下提交修改的格式约定，好让维护者方便的将信息填入对应的专业、课程当中。 如果你拥有一个github账号，但却不知道如何提交pull request，也没有关系。可以通过在本项目的github主页中提交issue，来给与支持。提交issue时可以是任意格式，但是建议参考一下提交修改的格式约定，好让维护者方便的将信息填入对应的专业、课程当中。 通过github提交pull request，具体的提交格式可以参考下一节。  提交的格式  由于本项目只是学科体系指南，所以当涉及学习资料时，只需填入链接和说明即可。不建议直接上传任何的视频、图片甚至教材到本项目当中来。 本项目的结构如下图所示  /content/posts: 为所有节点的根目录 subject_system: 学科体系介绍，当中包含了不同的专业目录及关系图；例如学科体系-中国 major: 学科专业介绍，当中包含此专业的基础课程和专业课程目录，以及课程之间的依赖关系；例如信息与计算科学等 course: 课程介绍，当中可包含不同学校的公开课视频链接，课件链接等; 例如数学分析    graph { posts [label=&amp;quot;/content/posts&amp;quot;]; subject_system [label=&amp;quot;subject_system&amp;quot;]; major [label=&amp;quot;major&amp;quot;]; course [label=&amp;quot;course&amp;quot;]; posts--subject_system; posts--major; posts--course; }  插入专业/课程时，不建议手动插入，可以通过以下角边，自动生成预设格式  生成专业  1  python new_major.</description>
     </item>
     
     <item>
