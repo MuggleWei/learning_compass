@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://mugglewei.github.io/learning_compass/sitemap.xml
