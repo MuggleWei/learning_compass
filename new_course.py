@@ -41,8 +41,13 @@ if __name__ == "__main__":
             f.write("| ---- | ---- | ---- | ---- | ---- |\n")
 
             f.write("\n")
-            f.write("## 推荐用书\n")
-            f.write("| 书名 | 备注 |\n")
+            f.write("## 教材习题用书\n")
+            f.write("| 书名 | 书号 | 作者 | 出版社 | 备注 |\n")
+            f.write("| ---- | ---- | ---- | ---- | ---- |\n")
+
+            f.write("\n")
+            f.write("## 依赖课程\n")
+            f.write("| 课程 | 备注 |\n")
             f.write("| ---- | ---- |\n")
 
             print("Generate Course {} completed, path: {}".format(
