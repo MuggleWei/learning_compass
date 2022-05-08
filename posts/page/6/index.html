@@ -114,7 +114,7 @@
 </h2>
 </header>
 <section class=entry-content>
-<p>学科编码 学科体系 编码 中国 070102 基础课程 课程名称 必修/选修 备注 数学分析 必修 高等代数 必修 解析几何 必修 c语言程序设计 必修 专业课程 课程名称 必修/选修 备注 离散数学 必修 数据结构与算法分析 必修 概率论与数理统计 必修 复变函数 必修 课程依赖关系 digraph { rankdir=LR; m1_1 [label="数学分析"]; m1_2 [label="高等代数"]; m1_3 [label="解析几何"]; m1_4 [label="离散数学"]; m2_1 [label="概率论与数理统计"] m2_2 [label="复变函数"] c1_1 [label="c语言程序设计"]; c2_1 [label="数据结构与算法分析"]; m1_4->c2_1; c1_1->c2_1; m1_1->m2_1; m1_1->m2_2; m1_2->m2_2; } </p>
+<p>学科编码 学科体系 编码 中国 070102 基础课程 课程名称 必修/选修 备注 数学分析 必修 高等代数 必修 解析几何 必修 c语言程序设计 必修 专业课程 课程名称 必修/选修 备注 离散数学 必修 数据结构与算法分析 必修 复变函数 必修 常微分方程 必修 实变函数 必修 概率论与数理统计 必修 信息论 必修 计算方法 选修 数学建模 选修 课程依赖关系 digraph { rankdir=LR; m1_1 [label="数学分析"]; m1_2 [label="高等代数"]; m1_3 [label="解析几何"]; m1_4 [label="离散数学"]; m2_1 [label="概率论与数理统计"] m2_2 [label="复变函数"] m2_3 [label="实变函数"] m2_4 [label="常微分方程"] c1_1 [label="c语言程序设计"]; c2_1 [label="数据结构与算法分析"]; cm1_1 [label="计算方法"] cm1_2 [label="信息论"] subgraph cluster_math_base { m1_1; m1_2; m1_3; m1 [label="数学类基础", style="dashed"]; }; subgraph cluster_cs_base { m1_4; c1_1; c2_1; }; # 概率论与数理统计 m1->m2_1; # 复变函数 m1->m2_2; # 常微分方程 m1->m2_4; # 实变函数 m1->m2_3; # 数据结构与算法分析 m1_4->c2_1; c1_1->c2_1; # 计算方法 m1->cm1_1; c2_1->cm1_1; # 信息论 m1->cm1_2; c2_1->cm1_2; } </p>
 </section>
 <footer class=entry-footer><span title="2022-05-08 21:05:59 +0800 +0800">五月 8, 2022</span></footer>
 <a class=entry-link aria-label="post link to 信息与计算科学" href=https://mugglewei.github.io/learning_compass/posts/major/%E4%BF%A1%E6%81%AF%E4%B8%8E%E8%AE%A1%E7%AE%97%E7%A7%91%E5%AD%A6/></a>
