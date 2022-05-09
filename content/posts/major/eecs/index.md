@@ -13,10 +13,12 @@ draft: false
 
 ### UC Berkeley体系EECS课程列表
 
+#### EE
+
 | 编号 | 课程名称 | 类别 | 备注 |
 | ---- | ---- | ---- | ---- |
 | 16A | Designing Information Devices And Systems I | required | |
-| 16B | DESIGNING INFORMATION DEVICES AND SYSTEMS II | required | |
+| 16B | Designing Information Devices And Systems II | required | |
 | 144 | Fundamental Algorithms For Systems Modeling, Analysis, And Optimization | robotics | |
 | 145L | Introductory Electronic Transducers Laboratory | robotics | |
 | C106A | Introduction To Robotics | robotics | |
@@ -41,9 +43,36 @@ draft: false
 | 134 | Fundamentals Of Photovoltaic Devices | devices | |
 | 143 | Microfabrication Technology | devices | |
 | 147 | Introduction To Microelectromechanical Systems(MEMS) | devices | |
-| 118 | INTRODUCTION TO OPTICAL ENGINEERING | optics | |
+| 118 | Introduction To Optical Engineering | optics | |
+
+#### CS
+| 编号 | 课程名称 | 类别 | 备注 |
+| ---- | ---- | ---- | ---- |
+| 61A | The Structure And Interpretation Of Computer Programs | core | |
+| 61B | Data Structures | core | |
+| 61C | Machine Structures | core | |
+| 70 | Discrete Mathematics And Probability Theory | core | |
+| 186 | Introduction To Database Systems | applications | |
+| 184 | Foundations Of Computer Graphics | applications | |
+| 188 | Introduction To Artificial Intelligence | applications | |
+| 189 | Introduction To Machine Learning | applications | |
+| 160 | User Interface Design And Development | software | |
+| 161 | Computer Security | software | |
+| 162 | Operating Systems And System Programming | software | |
+| 164 | Programming Languages And Compilers | software | |
+| 168 | Introduction To The Internet: Architecture And Protocols | software | |
+| 169 | Software Engineering | software | |
+| 170 | Efficient Algorithms And Intractable Problems | theory | |
+| 172 | Computability And Complexity | theory | |
+| 174 | Combinatorics And Discrete Probability | theory | |
+| 176 | Algorithms For Computational Biology | theory | |
+| 191 | Quantum Information Science And Technology | theory | |
+| 152 | Computer Architecture And Engineering | hardware | |
+
 
 ### UC Berkeley体系EECS课程路线图
+
+#### EE
 ```graphviz
 digraph {
     rankdir=LR;
@@ -205,5 +234,135 @@ digraph {
 
     # 147
     c16B->c147;
+}
+```
+
+#### CS
+```graphviz
+digraph {
+    rankdir=LR;
+
+    # core nodes
+    c61A [label="61A"];
+    c61B [label="61B"];
+    c61C [label="61C"];
+    c70 [label="70"];
+
+    # core cluster
+    subgraph cluster_core {
+        c61A; c61B; c61C; c70;
+        label="core";
+    }
+
+    # applications nodes
+    c186 [label="186"];
+    c184 [label="184"];
+    c188 [label="188"];
+    c189 [label="189"];
+
+    # applications cluster
+    subgraph cluster_applications {
+        c186; c184; c188; c189;
+        label="applications";
+    }
+
+    # software nodes
+    c160 [label="160"];
+    c161 [label="161"];
+    c162 [label="162"];
+    c164 [label="164"];
+    c168 [label="168"];
+    c169 [label="169"];
+
+    # software cluster
+    subgraph cluster_software {
+        c160; c161; c162; c164; c168; c169;
+        label="software";
+    }
+
+    # theory nodes
+    c170 [label="170"];
+    c172 [label="172"];
+    c174 [label="174"];
+    c176 [label="176"];
+    c191 [label="191"];
+
+    # theory cluster
+    subgraph cluster_theory {
+        c170; c172; c174; c176; c191;
+        label="theory";
+    }
+
+    # hardware nodes
+    c152 [label="152"];
+
+    # hardware cluster
+    subgraph cluster_hardware {
+        c152;
+        label="hardware";
+    }
+
+    ##### core dependency #####
+    # 61B
+    c61A->c61B;
+
+    # 61C
+    c61B->c61C;
+
+    ##### applications dependency #####
+    # 184
+    c61B->c184;
+
+    # 186
+    c61C->c186;
+
+    # 188
+    c70->c188;
+    c170->c188
+
+    # 189
+    c188->c189
+
+    ##### software dependency #####
+    # 160
+    c61B->c160;
+
+    # 161
+    c61C->c161;
+    c70->c161;
+
+    # 162
+    c70->c162;
+    c61C->c162;
+
+    # 164
+    c61C->c164;
+
+    # 168
+    c61B->c168;
+
+    # 169
+    c61C->c169;
+
+    ##### theory dependency #####
+    # 170
+    c61B->c170;
+    c70->c170;
+
+    # 172
+    c170->c172;
+
+    # 174
+    c170->c174;
+
+    # 176
+    c170->c176;
+
+    # 191
+    c170->c191;
+
+    ##### hardware dependency #####
+    # 152
+    c61C->c152;
 }
 ```
