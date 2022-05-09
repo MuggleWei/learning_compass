@@ -54,6 +54,7 @@ params:
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
     ShowToc: true
+    TocOpen: true
     # comments: false
     images: ["papermod-cover.png"]
 
