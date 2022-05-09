@@ -5,7 +5,7 @@
 <meta name=robots content="index, follow">
 <title>eecs | 学科自学指南</title>
 <meta name=keywords content>
-<meta name=description content="学科编码    学科体系 编码/代号 备注     UC Berkeley EECS https://hkn.eecs.berkeley.edu/courseguides    基础课程    课程名称 必修/选修 备注     Design information Devices And Systems 必修 UC Berkeley 16A   Design information Devices And Systems II 必修 UC Berkeley 16B   Fundamental Algorithms For Systems Modeling, Analysis, And Optimization 必修 UC Berkeley 144    专业课程    课程名称 必修/选修 备注    课程依赖关系 UC Berkeley体系课程关系图 digraph { c16A [label=&#34;16A&#34;]; c16B [label=&#34;16B&#34;]; c144 [label=&#34;144&#34;]; c16A->c16B; # 144 c16B->c144; } ">
+<meta name=description content="学科编码    学科体系 编码/代号 备注     UC Berkeley EECS https://hkn.eecs.berkeley.edu/courseguides    基础课程    课程名称 必修/选修 备注     Design information Devices And Systems  UC Berkeley 16A   Design information Devices And Systems II  UC Berkeley 16B    专业课程    课程名称 必修/选修 备注     Fundamental Algorithms For Systems Modeling, Analysis, And Optimization  UC Berkeley 144   Introductory Electronic Transducers Laboratory  UC Berkeley 145L   Introduction To Robotics  UC Berkeley C106A   Robotic Manipulation And Interaction  UC Berkeley C106B   Introduction To Embedded Systems  UC Berkeley 149   Mechatronic Design Laboratory  UC Berkeley 192   Feedback Control Systems  UC Berkeley 128   Signals And Systems  UC Berkeley 120   Digital Signal Processing  UC Berkeley 123   Probability And Random Processes  UC Berkeley 126   Introduction To Communication Networks  UC Berkeley 122   Optimization Models In Engineering  UC Berkeley 127   Medical Imaging Signals And Systems  UC Berkeley 145B   Electromagnetic Fields And Waves  UC Berkeley 117   Power Electronics  UC Berkeley 113   Introduction To Electric Power Systems  UC Berkeley 137A   Introduction To Electric Power Systems  UC Berkeley 137B   Microelectronic Devices And Circuits  UC Berkeley 105   Linear Integrated Circuits  UC Berkeley 140   Integrated Circuits For Communications  UC Berkeley 142   Integrated-Circuit Devices  UC Berkeley 130   Fundamentals Of Photovoltaic Devices  UC Berkeley 134   Microfabrication Technology  UC Berkeley 143   Introduction To Microelectromechanical Systems(MEMS)  UC Berkeley 147   INTRODUCTION TO OPTICAL ENGINEERING  UC Berkeley 118    课程依赖关系 UC Berkeley体系EE课程关系图 digraph { rankdir=LR; # required nodes c16A [label=&#34;16A&#34;]; c16B [label=&#34;16B&#34;]; # robotics nodes c144 [label=&#34;144&#34;]; c145L [label=&#34;145L&#34;]; c106A [label=&#34;C106A&#34;]; c106B [label=&#34;C106B&#34;]; c149 [label=&#34;149&#34;]; c192 [label=&#34;192&#34;]; c128 [label=&#34;128&#34;]; # signals nodes c120 [label=&#34;120&#34;]; c123 [label=&#34;123&#34;]; c126 [label=&#34;126&#34;]; c145B [label=&#34;145B&#34;]; c127 [label=&#34;127&#34;]; c122 [label=&#34;122&#34;]; # power nodes c117 [label=&#34;117&#34;]; c113 [label=&#34;113&#34;]; c137A [label=&#34;137A&#34;]; c137B [label=&#34;137B&#34;]; # circuits nodes c105 [label=&#34;105&#34;]; c140 [label=&#34;140&#34;]; c142 [label=&#34;142&#34;]; # devices nodes c130 [label=&#34;130&#34;]; c143 [label=&#34;143&#34;]; c134 [label=&#34;134&#34;]; c147 [label=&#34;147&#34;]; # optics nodes c118 [label=&#34;118&#34;]; # required cluster subgraph cluster_required { c16A; c16B; label=&#34;required&#34;; } # robotics cluster subgraph cluster_robotics { c144; c145L; c149; c106A; c106B; c192; c128; label=&#34;robotics&#34;; } # signal cluster subgraph cluster_signal { c120; c123; c126; c145B; c127; c122; label=&#34;signal&#34;; } # power cluster subgraph cluster_power { c117; c113; c137A; c137B; label=&#34;power&#34;; } # circuits cluster subgraph cluster_circuits { c105; c140; c142; label=&#34;circuits&#34;; } # devices cluster subgraph cluster_devices { c130; c134; c143; c147; label=&#34;devices&#34;; } # optics cluster subgraph cluster_optics { c118; label=&#34;optics&#34;; } ##### required dependency ##### c16A->c16B; ##### robotics dependency ##### # 144 c16B->c144; # 145L c145L; # 149 c16B->c149; # C106A c120->c106A; # C106B c106A->c106B # 192 c120->c192; ##### signal dependency ##### # 120 c16B->c120; # 123 c120->c123; # 126 c16B->c126; # 145B c16B->c145B; ##### power dependency ##### # 117 c16B->c117; # 137A c16B->c137A; # 137B c137A->c137B; # 113 c105->c113; ##### circuits dependency ##### # 105 c16B->c105; # 140 c105->c140; # 142 c117->c142; c140->c142; ##### devices dependency ##### # 130 c105->c130; # 143 c16B->c143; # 134 c16B->c134; # 147 c16B->c147; } ">
 <meta name=author content>
 <link rel=canonical href=https://mugglewei.github.io/learning_compass/posts/major/eecs/>
 <link crossorigin=anonymous href=/learning_compass/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style>
@@ -26,7 +26,7 @@
 <script defer src=/learning_compass/katex@0.15.2/katex.min.js crossorigin=anonymous></script>
 <script defer src=/learning_compass/katex@0.15.2/contrib/auto-render.min.js crossorigin=anonymous onload=renderMathInElement(document.body)></script>
 <meta property="og:title" content="eecs">
-<meta property="og:description" content="学科编码    学科体系 编码/代号 备注     UC Berkeley EECS https://hkn.eecs.berkeley.edu/courseguides    基础课程    课程名称 必修/选修 备注     Design information Devices And Systems 必修 UC Berkeley 16A   Design information Devices And Systems II 必修 UC Berkeley 16B   Fundamental Algorithms For Systems Modeling, Analysis, And Optimization 必修 UC Berkeley 144    专业课程    课程名称 必修/选修 备注    课程依赖关系 UC Berkeley体系课程关系图 digraph { c16A [label=&#34;16A&#34;]; c16B [label=&#34;16B&#34;]; c144 [label=&#34;144&#34;]; c16A->c16B; # 144 c16B->c144; } ">
+<meta property="og:description" content="学科编码    学科体系 编码/代号 备注     UC Berkeley EECS https://hkn.eecs.berkeley.edu/courseguides    基础课程    课程名称 必修/选修 备注     Design information Devices And Systems  UC Berkeley 16A   Design information Devices And Systems II  UC Berkeley 16B    专业课程    课程名称 必修/选修 备注     Fundamental Algorithms For Systems Modeling, Analysis, And Optimization  UC Berkeley 144   Introductory Electronic Transducers Laboratory  UC Berkeley 145L   Introduction To Robotics  UC Berkeley C106A   Robotic Manipulation And Interaction  UC Berkeley C106B   Introduction To Embedded Systems  UC Berkeley 149   Mechatronic Design Laboratory  UC Berkeley 192   Feedback Control Systems  UC Berkeley 128   Signals And Systems  UC Berkeley 120   Digital Signal Processing  UC Berkeley 123   Probability And Random Processes  UC Berkeley 126   Introduction To Communication Networks  UC Berkeley 122   Optimization Models In Engineering  UC Berkeley 127   Medical Imaging Signals And Systems  UC Berkeley 145B   Electromagnetic Fields And Waves  UC Berkeley 117   Power Electronics  UC Berkeley 113   Introduction To Electric Power Systems  UC Berkeley 137A   Introduction To Electric Power Systems  UC Berkeley 137B   Microelectronic Devices And Circuits  UC Berkeley 105   Linear Integrated Circuits  UC Berkeley 140   Integrated Circuits For Communications  UC Berkeley 142   Integrated-Circuit Devices  UC Berkeley 130   Fundamentals Of Photovoltaic Devices  UC Berkeley 134   Microfabrication Technology  UC Berkeley 143   Introduction To Microelectromechanical Systems(MEMS)  UC Berkeley 147   INTRODUCTION TO OPTICAL ENGINEERING  UC Berkeley 118    课程依赖关系 UC Berkeley体系EE课程关系图 digraph { rankdir=LR; # required nodes c16A [label=&#34;16A&#34;]; c16B [label=&#34;16B&#34;]; # robotics nodes c144 [label=&#34;144&#34;]; c145L [label=&#34;145L&#34;]; c106A [label=&#34;C106A&#34;]; c106B [label=&#34;C106B&#34;]; c149 [label=&#34;149&#34;]; c192 [label=&#34;192&#34;]; c128 [label=&#34;128&#34;]; # signals nodes c120 [label=&#34;120&#34;]; c123 [label=&#34;123&#34;]; c126 [label=&#34;126&#34;]; c145B [label=&#34;145B&#34;]; c127 [label=&#34;127&#34;]; c122 [label=&#34;122&#34;]; # power nodes c117 [label=&#34;117&#34;]; c113 [label=&#34;113&#34;]; c137A [label=&#34;137A&#34;]; c137B [label=&#34;137B&#34;]; # circuits nodes c105 [label=&#34;105&#34;]; c140 [label=&#34;140&#34;]; c142 [label=&#34;142&#34;]; # devices nodes c130 [label=&#34;130&#34;]; c143 [label=&#34;143&#34;]; c134 [label=&#34;134&#34;]; c147 [label=&#34;147&#34;]; # optics nodes c118 [label=&#34;118&#34;]; # required cluster subgraph cluster_required { c16A; c16B; label=&#34;required&#34;; } # robotics cluster subgraph cluster_robotics { c144; c145L; c149; c106A; c106B; c192; c128; label=&#34;robotics&#34;; } # signal cluster subgraph cluster_signal { c120; c123; c126; c145B; c127; c122; label=&#34;signal&#34;; } # power cluster subgraph cluster_power { c117; c113; c137A; c137B; label=&#34;power&#34;; } # circuits cluster subgraph cluster_circuits { c105; c140; c142; label=&#34;circuits&#34;; } # devices cluster subgraph cluster_devices { c130; c134; c143; c147; label=&#34;devices&#34;; } # optics cluster subgraph cluster_optics { c118; label=&#34;optics&#34;; } ##### required dependency ##### c16A->c16B; ##### robotics dependency ##### # 144 c16B->c144; # 145L c145L; # 149 c16B->c149; # C106A c120->c106A; # C106B c106A->c106B # 192 c120->c192; ##### signal dependency ##### # 120 c16B->c120; # 123 c120->c123; # 126 c16B->c126; # 145B c16B->c145B; ##### power dependency ##### # 117 c16B->c117; # 137A c16B->c137A; # 137B c137A->c137B; # 113 c105->c113; ##### circuits dependency ##### # 105 c16B->c105; # 140 c105->c140; # 142 c117->c142; c140->c142; ##### devices dependency ##### # 130 c105->c130; # 143 c16B->c143; # 134 c16B->c134; # 147 c16B->c147; } ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://mugglewei.github.io/learning_compass/posts/major/eecs/"><meta property="og:image" content="https://mugglewei.github.io/learning_compass/papermod-cover.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2022-05-09T11:29:13+08:00">
@@ -34,9 +34,9 @@
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://mugglewei.github.io/learning_compass/papermod-cover.png">
 <meta name=twitter:title content="eecs">
-<meta name=twitter:description content="学科编码    学科体系 编码/代号 备注     UC Berkeley EECS https://hkn.eecs.berkeley.edu/courseguides    基础课程    课程名称 必修/选修 备注     Design information Devices And Systems 必修 UC Berkeley 16A   Design information Devices And Systems II 必修 UC Berkeley 16B   Fundamental Algorithms For Systems Modeling, Analysis, And Optimization 必修 UC Berkeley 144    专业课程    课程名称 必修/选修 备注    课程依赖关系 UC Berkeley体系课程关系图 digraph { c16A [label=&#34;16A&#34;]; c16B [label=&#34;16B&#34;]; c144 [label=&#34;144&#34;]; c16A->c16B; # 144 c16B->c144; } ">
+<meta name=twitter:description content="学科编码    学科体系 编码/代号 备注     UC Berkeley EECS https://hkn.eecs.berkeley.edu/courseguides    基础课程    课程名称 必修/选修 备注     Design information Devices And Systems  UC Berkeley 16A   Design information Devices And Systems II  UC Berkeley 16B    专业课程    课程名称 必修/选修 备注     Fundamental Algorithms For Systems Modeling, Analysis, And Optimization  UC Berkeley 144   Introductory Electronic Transducers Laboratory  UC Berkeley 145L   Introduction To Robotics  UC Berkeley C106A   Robotic Manipulation And Interaction  UC Berkeley C106B   Introduction To Embedded Systems  UC Berkeley 149   Mechatronic Design Laboratory  UC Berkeley 192   Feedback Control Systems  UC Berkeley 128   Signals And Systems  UC Berkeley 120   Digital Signal Processing  UC Berkeley 123   Probability And Random Processes  UC Berkeley 126   Introduction To Communication Networks  UC Berkeley 122   Optimization Models In Engineering  UC Berkeley 127   Medical Imaging Signals And Systems  UC Berkeley 145B   Electromagnetic Fields And Waves  UC Berkeley 117   Power Electronics  UC Berkeley 113   Introduction To Electric Power Systems  UC Berkeley 137A   Introduction To Electric Power Systems  UC Berkeley 137B   Microelectronic Devices And Circuits  UC Berkeley 105   Linear Integrated Circuits  UC Berkeley 140   Integrated Circuits For Communications  UC Berkeley 142   Integrated-Circuit Devices  UC Berkeley 130   Fundamentals Of Photovoltaic Devices  UC Berkeley 134   Microfabrication Technology  UC Berkeley 143   Introduction To Microelectromechanical Systems(MEMS)  UC Berkeley 147   INTRODUCTION TO OPTICAL ENGINEERING  UC Berkeley 118    课程依赖关系 UC Berkeley体系EE课程关系图 digraph { rankdir=LR; # required nodes c16A [label=&#34;16A&#34;]; c16B [label=&#34;16B&#34;]; # robotics nodes c144 [label=&#34;144&#34;]; c145L [label=&#34;145L&#34;]; c106A [label=&#34;C106A&#34;]; c106B [label=&#34;C106B&#34;]; c149 [label=&#34;149&#34;]; c192 [label=&#34;192&#34;]; c128 [label=&#34;128&#34;]; # signals nodes c120 [label=&#34;120&#34;]; c123 [label=&#34;123&#34;]; c126 [label=&#34;126&#34;]; c145B [label=&#34;145B&#34;]; c127 [label=&#34;127&#34;]; c122 [label=&#34;122&#34;]; # power nodes c117 [label=&#34;117&#34;]; c113 [label=&#34;113&#34;]; c137A [label=&#34;137A&#34;]; c137B [label=&#34;137B&#34;]; # circuits nodes c105 [label=&#34;105&#34;]; c140 [label=&#34;140&#34;]; c142 [label=&#34;142&#34;]; # devices nodes c130 [label=&#34;130&#34;]; c143 [label=&#34;143&#34;]; c134 [label=&#34;134&#34;]; c147 [label=&#34;147&#34;]; # optics nodes c118 [label=&#34;118&#34;]; # required cluster subgraph cluster_required { c16A; c16B; label=&#34;required&#34;; } # robotics cluster subgraph cluster_robotics { c144; c145L; c149; c106A; c106B; c192; c128; label=&#34;robotics&#34;; } # signal cluster subgraph cluster_signal { c120; c123; c126; c145B; c127; c122; label=&#34;signal&#34;; } # power cluster subgraph cluster_power { c117; c113; c137A; c137B; label=&#34;power&#34;; } # circuits cluster subgraph cluster_circuits { c105; c140; c142; label=&#34;circuits&#34;; } # devices cluster subgraph cluster_devices { c130; c134; c143; c147; label=&#34;devices&#34;; } # optics cluster subgraph cluster_optics { c118; label=&#34;optics&#34;; } ##### required dependency ##### c16A->c16B; ##### robotics dependency ##### # 144 c16B->c144; # 145L c145L; # 149 c16B->c149; # C106A c120->c106A; # C106B c106A->c106B # 192 c120->c192; ##### signal dependency ##### # 120 c16B->c120; # 123 c120->c123; # 126 c16B->c126; # 145B c16B->c145B; ##### power dependency ##### # 117 c16B->c117; # 137A c16B->c137A; # 137B c137A->c137B; # 113 c105->c113; ##### circuits dependency ##### # 105 c16B->c105; # 140 c105->c140; # 142 c117->c142; c140->c142; ##### devices dependency ##### # 130 c105->c130; # 143 c16B->c143; # 134 c16B->c134; # 147 c16B->c147; } ">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://mugglewei.github.io/learning_compass/posts/"},{"@type":"ListItem","position":3,"name":"eecs","item":"https://mugglewei.github.io/learning_compass/posts/major/eecs/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"eecs","name":"eecs","description":"学科编码    学科体系 编码/代号 备注     UC Berkeley EECS https://hkn.eecs.berkeley.edu/courseguides    基础课程    课程名称 必修/选修 备注     Design information Devices And Systems 必修 UC Berkeley 16A   Design information Devices And Systems II 必修 UC Berkeley 16B   Fundamental Algorithms For Systems Modeling, Analysis, And Optimization 必修 UC Berkeley 144    专业课程    课程名称 必修/选修 备注    课程依赖关系 UC Berkeley体系课程关系图 digraph { c16A [label=\u0026quot;16A\u0026quot;]; c16B [label=\u0026quot;16B\u0026quot;]; c144 [label=\u0026quot;144\u0026quot;]; c16A-\u0026gt;c16B; # 144 c16B-\u0026gt;c144; } ","keywords":[],"articleBody":"学科编码    学科体系 编码/代号 备注     UC Berkeley EECS https://hkn.eecs.berkeley.edu/courseguides    基础课程    课程名称 必修/选修 备注     Design information Devices And Systems 必修 UC Berkeley 16A   Design information Devices And Systems II 必修 UC Berkeley 16B   Fundamental Algorithms For Systems Modeling, Analysis, And Optimization 必修 UC Berkeley 144    专业课程    课程名称 必修/选修 备注    课程依赖关系 UC Berkeley体系课程关系图 digraph { c16A [label=\"16A\"]; c16B [label=\"16B\"]; c144 [label=\"144\"]; c16A-c16B; # 144 c16B-c144; } ","wordCount":"63","inLanguage":"zh","datePublished":"2022-05-09T11:29:13+08:00","dateModified":"2022-05-09T11:29:13+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mugglewei.github.io/learning_compass/posts/major/eecs/"},"publisher":{"@type":"Organization","name":"学科自学指南","logo":{"@type":"ImageObject","url":"https://mugglewei.github.io/learning_compass/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"eecs","name":"eecs","description":"学科编码    学科体系 编码/代号 备注     UC Berkeley EECS https://hkn.eecs.berkeley.edu/courseguides    基础课程    课程名称 必修/选修 备注     Design information Devices And Systems  UC Berkeley 16A   Design information Devices And Systems II  UC Berkeley 16B    专业课程    课程名称 必修/选修 备注     Fundamental Algorithms For Systems Modeling, Analysis, And Optimization  UC Berkeley 144   Introductory Electronic Transducers Laboratory  UC Berkeley 145L   Introduction To Robotics  UC Berkeley C106A   Robotic Manipulation And Interaction  UC Berkeley C106B   Introduction To Embedded Systems  UC Berkeley 149   Mechatronic Design Laboratory  UC Berkeley 192   Feedback Control Systems  UC Berkeley 128   Signals And Systems  UC Berkeley 120   Digital Signal Processing  UC Berkeley 123   Probability And Random Processes  UC Berkeley 126   Introduction To Communication Networks  UC Berkeley 122   Optimization Models In Engineering  UC Berkeley 127   Medical Imaging Signals And Systems  UC Berkeley 145B   Electromagnetic Fields And Waves  UC Berkeley 117   Power Electronics  UC Berkeley 113   Introduction To Electric Power Systems  UC Berkeley 137A   Introduction To Electric Power Systems  UC Berkeley 137B   Microelectronic Devices And Circuits  UC Berkeley 105   Linear Integrated Circuits  UC Berkeley 140   Integrated Circuits For Communications  UC Berkeley 142   Integrated-Circuit Devices  UC Berkeley 130   Fundamentals Of Photovoltaic Devices  UC Berkeley 134   Microfabrication Technology  UC Berkeley 143   Introduction To Microelectromechanical Systems(MEMS)  UC Berkeley 147   INTRODUCTION TO OPTICAL ENGINEERING  UC Berkeley 118    课程依赖关系 UC Berkeley体系EE课程关系图 digraph { rankdir=LR; # required nodes c16A [label=\u0026quot;16A\u0026quot;]; c16B [label=\u0026quot;16B\u0026quot;]; # robotics nodes c144 [label=\u0026quot;144\u0026quot;]; c145L [label=\u0026quot;145L\u0026quot;]; c106A [label=\u0026quot;C106A\u0026quot;]; c106B [label=\u0026quot;C106B\u0026quot;]; c149 [label=\u0026quot;149\u0026quot;]; c192 [label=\u0026quot;192\u0026quot;]; c128 [label=\u0026quot;128\u0026quot;]; # signals nodes c120 [label=\u0026quot;120\u0026quot;]; c123 [label=\u0026quot;123\u0026quot;]; c126 [label=\u0026quot;126\u0026quot;]; c145B [label=\u0026quot;145B\u0026quot;]; c127 [label=\u0026quot;127\u0026quot;]; c122 [label=\u0026quot;122\u0026quot;]; # power nodes c117 [label=\u0026quot;117\u0026quot;]; c113 [label=\u0026quot;113\u0026quot;]; c137A [label=\u0026quot;137A\u0026quot;]; c137B [label=\u0026quot;137B\u0026quot;]; # circuits nodes c105 [label=\u0026quot;105\u0026quot;]; c140 [label=\u0026quot;140\u0026quot;]; c142 [label=\u0026quot;142\u0026quot;]; # devices nodes c130 [label=\u0026quot;130\u0026quot;]; c143 [label=\u0026quot;143\u0026quot;]; c134 [label=\u0026quot;134\u0026quot;]; c147 [label=\u0026quot;147\u0026quot;]; # optics nodes c118 [label=\u0026quot;118\u0026quot;]; # required cluster subgraph cluster_required { c16A; c16B; label=\u0026quot;required\u0026quot;; } # robotics cluster subgraph cluster_robotics { c144; c145L; c149; c106A; c106B; c192; c128; label=\u0026quot;robotics\u0026quot;; } # signal cluster subgraph cluster_signal { c120; c123; c126; c145B; c127; c122; label=\u0026quot;signal\u0026quot;; } # power cluster subgraph cluster_power { c117; c113; c137A; c137B; label=\u0026quot;power\u0026quot;; } # circuits cluster subgraph cluster_circuits { c105; c140; c142; label=\u0026quot;circuits\u0026quot;; } # devices cluster subgraph cluster_devices { c130; c134; c143; c147; label=\u0026quot;devices\u0026quot;; } # optics cluster subgraph cluster_optics { c118; label=\u0026quot;optics\u0026quot;; } ##### required dependency ##### c16A-\u0026gt;c16B; ##### robotics dependency ##### # 144 c16B-\u0026gt;c144; # 145L c145L; # 149 c16B-\u0026gt;c149; # C106A c120-\u0026gt;c106A; # C106B c106A-\u0026gt;c106B # 192 c120-\u0026gt;c192; ##### signal dependency ##### # 120 c16B-\u0026gt;c120; # 123 c120-\u0026gt;c123; # 126 c16B-\u0026gt;c126; # 145B c16B-\u0026gt;c145B; ##### power dependency ##### # 117 c16B-\u0026gt;c117; # 137A c16B-\u0026gt;c137A; # 137B c137A-\u0026gt;c137B; # 113 c105-\u0026gt;c113; ##### circuits dependency ##### # 105 c16B-\u0026gt;c105; # 140 c105-\u0026gt;c140; # 142 c117-\u0026gt;c142; c140-\u0026gt;c142; ##### devices dependency ##### # 130 c105-\u0026gt;c130; # 143 c16B-\u0026gt;c143; # 134 c16B-\u0026gt;c134; # 147 c16B-\u0026gt;c147; } ","keywords":[],"articleBody":"学科编码    学科体系 编码/代号 备注     UC Berkeley EECS https://hkn.eecs.berkeley.edu/courseguides    基础课程    课程名称 必修/选修 备注     Design information Devices And Systems  UC Berkeley 16A   Design information Devices And Systems II  UC Berkeley 16B    专业课程    课程名称 必修/选修 备注     Fundamental Algorithms For Systems Modeling, Analysis, And Optimization  UC Berkeley 144   Introductory Electronic Transducers Laboratory  UC Berkeley 145L   Introduction To Robotics  UC Berkeley C106A   Robotic Manipulation And Interaction  UC Berkeley C106B   Introduction To Embedded Systems  UC Berkeley 149   Mechatronic Design Laboratory  UC Berkeley 192   Feedback Control Systems  UC Berkeley 128   Signals And Systems  UC Berkeley 120   Digital Signal Processing  UC Berkeley 123   Probability And Random Processes  UC Berkeley 126   Introduction To Communication Networks  UC Berkeley 122   Optimization Models In Engineering  UC Berkeley 127   Medical Imaging Signals And Systems  UC Berkeley 145B   Electromagnetic Fields And Waves  UC Berkeley 117   Power Electronics  UC Berkeley 113   Introduction To Electric Power Systems  UC Berkeley 137A   Introduction To Electric Power Systems  UC Berkeley 137B   Microelectronic Devices And Circuits  UC Berkeley 105   Linear Integrated Circuits  UC Berkeley 140   Integrated Circuits For Communications  UC Berkeley 142   Integrated-Circuit Devices  UC Berkeley 130   Fundamentals Of Photovoltaic Devices  UC Berkeley 134   Microfabrication Technology  UC Berkeley 143   Introduction To Microelectromechanical Systems(MEMS)  UC Berkeley 147   INTRODUCTION TO OPTICAL ENGINEERING  UC Berkeley 118    课程依赖关系 UC Berkeley体系EE课程关系图 digraph { rankdir=LR; # required nodes c16A [label=\"16A\"]; c16B [label=\"16B\"]; # robotics nodes c144 [label=\"144\"]; c145L [label=\"145L\"]; c106A [label=\"C106A\"]; c106B [label=\"C106B\"]; c149 [label=\"149\"]; c192 [label=\"192\"]; c128 [label=\"128\"]; # signals nodes c120 [label=\"120\"]; c123 [label=\"123\"]; c126 [label=\"126\"]; c145B [label=\"145B\"]; c127 [label=\"127\"]; c122 [label=\"122\"]; # power nodes c117 [label=\"117\"]; c113 [label=\"113\"]; c137A [label=\"137A\"]; c137B [label=\"137B\"]; # circuits nodes c105 [label=\"105\"]; c140 [label=\"140\"]; c142 [label=\"142\"]; # devices nodes c130 [label=\"130\"]; c143 [label=\"143\"]; c134 [label=\"134\"]; c147 [label=\"147\"]; # optics nodes c118 [label=\"118\"]; # required cluster subgraph cluster_required { c16A; c16B; label=\"required\"; } # robotics cluster subgraph cluster_robotics { c144; c145L; c149; c106A; c106B; c192; c128; label=\"robotics\"; } # signal cluster subgraph cluster_signal { c120; c123; c126; c145B; c127; c122; label=\"signal\"; } # power cluster subgraph cluster_power { c117; c113; c137A; c137B; label=\"power\"; } # circuits cluster subgraph cluster_circuits { c105; c140; c142; label=\"circuits\"; } # devices cluster subgraph cluster_devices { c130; c134; c143; c147; label=\"devices\"; } # optics cluster subgraph cluster_optics { c118; label=\"optics\"; } ##### required dependency ##### c16A-c16B; ##### robotics dependency ##### # 144 c16B-c144; # 145L c145L; # 149 c16B-c149; # C106A c120-c106A; # C106B c106A-c106B # 192 c120-c192; ##### signal dependency ##### # 120 c16B-c120; # 123 c120-c123; # 126 c16B-c126; # 145B c16B-c145B; ##### power dependency ##### # 117 c16B-c117; # 137A c16B-c137A; # 137B c137A-c137B; # 113 c105-c113; ##### circuits dependency ##### # 105 c16B-c105; # 140 c105-c140; # 142 c117-c142; c140-c142; ##### devices dependency ##### # 130 c105-c130; # 143 c16B-c143; # 134 c16B-c134; # 147 c16B-c147; } ","wordCount":"457","inLanguage":"zh","datePublished":"2022-05-09T11:29:13+08:00","dateModified":"2022-05-09T11:29:13+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mugglewei.github.io/learning_compass/posts/major/eecs/"},"publisher":{"@type":"Organization","name":"学科自学指南","logo":{"@type":"ImageObject","url":"https://mugglewei.github.io/learning_compass/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -88,7 +88,7 @@ eecs
 <li>
 <a href=#%e8%af%be%e7%a8%8b%e4%be%9d%e8%b5%96%e5%85%b3%e7%b3%bb aria-label=课程依赖关系>课程依赖关系</a><ul>
 <li>
-<a href=#uc-berkeley%e4%bd%93%e7%b3%bb%e8%af%be%e7%a8%8b%e5%85%b3%e7%b3%bb%e5%9b%be aria-label="UC Berkeley体系课程关系图">UC Berkeley体系课程关系图</a>
+<a href=#uc-berkeley%e4%bd%93%e7%b3%bbee%e8%af%be%e7%a8%8b%e5%85%b3%e7%b3%bb%e5%9b%be aria-label="UC Berkeley体系EE课程关系图">UC Berkeley体系EE课程关系图</a>
 </li>
 </ul>
 </li>
@@ -125,18 +125,13 @@ eecs
 <tbody>
 <tr>
 <td>Design information Devices And Systems</td>
-<td>必修</td>
+<td></td>
 <td>UC Berkeley 16A</td>
 </tr>
 <tr>
 <td>Design information Devices And Systems II</td>
-<td>必修</td>
+<td></td>
 <td>UC Berkeley 16B</td>
-</tr>
-<tr>
-<td>Fundamental Algorithms For Systems Modeling, Analysis, And Optimization</td>
-<td>必修</td>
-<td>UC Berkeley 144</td>
 </tr>
 </tbody>
 </table>
@@ -149,18 +144,296 @@ eecs
 <th>备注</th>
 </tr>
 </thead>
+<tbody>
+<tr>
+<td>Fundamental Algorithms For Systems Modeling, Analysis, And Optimization</td>
+<td></td>
+<td>UC Berkeley 144</td>
+</tr>
+<tr>
+<td>Introductory Electronic Transducers Laboratory</td>
+<td></td>
+<td>UC Berkeley 145L</td>
+</tr>
+<tr>
+<td>Introduction To Robotics</td>
+<td></td>
+<td>UC Berkeley C106A</td>
+</tr>
+<tr>
+<td>Robotic Manipulation And Interaction</td>
+<td></td>
+<td>UC Berkeley C106B</td>
+</tr>
+<tr>
+<td>Introduction To Embedded Systems</td>
+<td></td>
+<td>UC Berkeley 149</td>
+</tr>
+<tr>
+<td>Mechatronic Design Laboratory</td>
+<td></td>
+<td>UC Berkeley 192</td>
+</tr>
+<tr>
+<td>Feedback Control Systems</td>
+<td></td>
+<td>UC Berkeley 128</td>
+</tr>
+<tr>
+<td>Signals And Systems</td>
+<td></td>
+<td>UC Berkeley 120</td>
+</tr>
+<tr>
+<td>Digital Signal Processing</td>
+<td></td>
+<td>UC Berkeley 123</td>
+</tr>
+<tr>
+<td>Probability And Random Processes</td>
+<td></td>
+<td>UC Berkeley 126</td>
+</tr>
+<tr>
+<td>Introduction To Communication Networks</td>
+<td></td>
+<td>UC Berkeley 122</td>
+</tr>
+<tr>
+<td>Optimization Models In Engineering</td>
+<td></td>
+<td>UC Berkeley 127</td>
+</tr>
+<tr>
+<td>Medical Imaging Signals And Systems</td>
+<td></td>
+<td>UC Berkeley 145B</td>
+</tr>
+<tr>
+<td>Electromagnetic Fields And Waves</td>
+<td></td>
+<td>UC Berkeley 117</td>
+</tr>
+<tr>
+<td>Power Electronics</td>
+<td></td>
+<td>UC Berkeley 113</td>
+</tr>
+<tr>
+<td>Introduction To Electric Power Systems</td>
+<td></td>
+<td>UC Berkeley 137A</td>
+</tr>
+<tr>
+<td>Introduction To Electric Power Systems</td>
+<td></td>
+<td>UC Berkeley 137B</td>
+</tr>
+<tr>
+<td>Microelectronic Devices And Circuits</td>
+<td></td>
+<td>UC Berkeley 105</td>
+</tr>
+<tr>
+<td>Linear Integrated Circuits</td>
+<td></td>
+<td>UC Berkeley 140</td>
+</tr>
+<tr>
+<td>Integrated Circuits For Communications</td>
+<td></td>
+<td>UC Berkeley 142</td>
+</tr>
+<tr>
+<td>Integrated-Circuit Devices</td>
+<td></td>
+<td>UC Berkeley 130</td>
+</tr>
+<tr>
+<td>Fundamentals Of Photovoltaic Devices</td>
+<td></td>
+<td>UC Berkeley 134</td>
+</tr>
+<tr>
+<td>Microfabrication Technology</td>
+<td></td>
+<td>UC Berkeley 143</td>
+</tr>
+<tr>
+<td>Introduction To Microelectromechanical Systems(MEMS)</td>
+<td></td>
+<td>UC Berkeley 147</td>
+</tr>
+<tr>
+<td>INTRODUCTION TO OPTICAL ENGINEERING</td>
+<td></td>
+<td>UC Berkeley 118</td>
+</tr>
+</tbody>
 </table>
 <h2 id=课程依赖关系>课程依赖关系<a hidden class=anchor aria-hidden=true href=#课程依赖关系>#</a></h2>
-<h3 id=uc-berkeley体系课程关系图>UC Berkeley体系课程关系图<a hidden class=anchor aria-hidden=true href=#uc-berkeley体系课程关系图>#</a></h3>
+<h3 id=uc-berkeley体系ee课程关系图>UC Berkeley体系EE课程关系图<a hidden class=anchor aria-hidden=true href=#uc-berkeley体系ee课程关系图>#</a></h3>
 <pre tabindex=0><code class=language-graphviz data-lang=graphviz>digraph {
+    rankdir=LR;
+
+    # required nodes
     c16A [label=&quot;16A&quot;];
     c16B [label=&quot;16B&quot;];
-    c144 [label=&quot;144&quot;];
 
+    # robotics nodes
+    c144 [label=&quot;144&quot;];
+    c145L [label=&quot;145L&quot;];
+    c106A [label=&quot;C106A&quot;];
+    c106B [label=&quot;C106B&quot;];
+    c149 [label=&quot;149&quot;];
+    c192 [label=&quot;192&quot;];
+    c128 [label=&quot;128&quot;];
+
+    # signals nodes
+    c120 [label=&quot;120&quot;];
+    c123 [label=&quot;123&quot;];
+    c126 [label=&quot;126&quot;];
+    c145B [label=&quot;145B&quot;];
+    c127 [label=&quot;127&quot;];
+    c122 [label=&quot;122&quot;];
+
+    # power nodes
+    c117 [label=&quot;117&quot;];
+    c113 [label=&quot;113&quot;];
+    c137A [label=&quot;137A&quot;];
+    c137B [label=&quot;137B&quot;];
+
+    # circuits nodes
+    c105 [label=&quot;105&quot;];
+    c140 [label=&quot;140&quot;];
+    c142 [label=&quot;142&quot;];
+
+    # devices nodes
+    c130 [label=&quot;130&quot;];
+    c143 [label=&quot;143&quot;];
+    c134 [label=&quot;134&quot;];
+    c147 [label=&quot;147&quot;];
+
+    # optics nodes
+    c118 [label=&quot;118&quot;];
+
+    # required cluster
+    subgraph cluster_required {
+        c16A; c16B;
+        label=&quot;required&quot;;
+    }
+
+    # robotics cluster
+    subgraph cluster_robotics {
+        c144; c145L; c149;
+        c106A; c106B;
+        c192; c128;
+        label=&quot;robotics&quot;;
+    }
+
+    # signal cluster
+    subgraph cluster_signal {
+        c120; c123; c126;
+        c145B; c127; c122;
+        label=&quot;signal&quot;;
+    }
+
+    # power cluster
+    subgraph cluster_power {
+        c117; c113; c137A; c137B;
+        label=&quot;power&quot;;
+    }
+
+    # circuits cluster
+    subgraph cluster_circuits {
+        c105; c140; c142;
+        label=&quot;circuits&quot;;
+    }
+
+    # devices cluster
+    subgraph cluster_devices {
+        c130; c134; c143; c147;
+        label=&quot;devices&quot;;
+    }
+
+    # optics cluster
+    subgraph cluster_optics {
+        c118;
+        label=&quot;optics&quot;;
+    }
+
+    ##### required dependency #####
     c16A-&gt;c16B;
 
+    ##### robotics dependency #####
     # 144
     c16B-&gt;c144;
+
+    # 145L
+    c145L;
+
+    # 149
+    c16B-&gt;c149;
+
+    # C106A
+    c120-&gt;c106A;
+
+    # C106B
+    c106A-&gt;c106B
+
+    # 192
+    c120-&gt;c192;
+
+    ##### signal dependency #####
+    # 120
+    c16B-&gt;c120;
+
+    # 123
+    c120-&gt;c123;
+
+    # 126
+    c16B-&gt;c126;
+
+    # 145B
+    c16B-&gt;c145B;
+
+    ##### power dependency #####
+    # 117
+    c16B-&gt;c117;
+
+    # 137A
+    c16B-&gt;c137A;
+
+    # 137B
+    c137A-&gt;c137B;
+
+    # 113
+    c105-&gt;c113;
+
+    ##### circuits dependency #####
+    # 105
+    c16B-&gt;c105;
+
+    # 140
+    c105-&gt;c140;
+
+    # 142
+    c117-&gt;c142;
+    c140-&gt;c142;
+
+    ##### devices dependency #####
+    # 130
+    c105-&gt;c130;
+
+    # 143
+    c16B-&gt;c143;
+
+    # 134
+    c16B-&gt;c134;
+
+    # 147
+    c16B-&gt;c147;
 }
 </code></pre>
 </div>
