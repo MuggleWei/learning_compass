@@ -9,7 +9,16 @@
       <link>https://mugglewei.github.io/learning_compass/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 May 2022 14:46:32 +0800</lastBuildDate><atom:link href="https://mugglewei.github.io/learning_compass/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 May 2022 22:21:02 +0800</lastBuildDate><atom:link href="https://mugglewei.github.io/learning_compass/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解析几何</title>
+      <link>https://mugglewei.github.io/learning_compass/posts/course/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/</link>
+      <pubDate>Mon, 09 May 2022 22:21:02 +0800</pubDate>
+      
+      <guid>https://mugglewei.github.io/learning_compass/posts/course/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/</guid>
+      <description>课程资源    名称 大学/机构 公开课视频链接 课件链接 备注     解析几何 复旦大学 b站-史济怀-解析几何      教材习题用书    书名 书号 作者 出版社 备注     解析几何(第三版) ISBN:9787301259214 丘维声 北京大学出版社    解析几何 ISBN:9787301045800 尤承业 北京大学出版社    解析几何简明教程(第2版) ISBN:9787040235739 吴光磊, 田畴 高等教育出版社     依赖课程    课程 备注     高中数学     </description>
+    </item>
+    
     <item>
       <title>中医学</title>
       <link>https://mugglewei.github.io/learning_compass/posts/major/%E4%B8%AD%E5%8C%BB%E5%AD%A6/</link>
