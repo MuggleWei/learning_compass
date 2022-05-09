@@ -1,5 +1,5 @@
 ---
-title: "eecs"
+title: "EECS"
 date: 2022-05-09T11:29:13+08:00
 draft: false
 ---
