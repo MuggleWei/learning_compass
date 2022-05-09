@@ -1,52 +1,49 @@
 ---
 title: "EECS"
-date: 2022-05-09T11:29:13+08:00
+date: 2022-05-09T14:30:35+08:00
 draft: false
 ---
 
 ## 学科编码
-| 学科体系 | 编码/代号 | 备注 |
+| 学科体系 | 编码 | 备注 |
 | ---- | ---- | ---- |
 | UC Berkeley | EECS | https://hkn.eecs.berkeley.edu/courseguides |
 
-## 基础课程
-| 课程名称 | 必修/选修 | 备注 |
-| ---- | ---- | ---- |
-| Design information Devices And Systems | | UC Berkeley 16A |
-| Design information Devices And Systems II | | UC Berkeley 16B |
+## 课程列表与路线图
 
-## 专业课程
-| 课程名称 | 必修/选修 | 备注 |
-| ---- | ---- | ---- |
-| Fundamental Algorithms For Systems Modeling, Analysis, And Optimization | | UC Berkeley 144 |
-| Introductory Electronic Transducers Laboratory | | UC Berkeley 145L |
-| Introduction To Robotics | | UC Berkeley C106A |
-| Robotic Manipulation And Interaction | | UC Berkeley C106B |
-| Introduction To Embedded Systems | | UC Berkeley 149 |
-| Mechatronic Design Laboratory | | UC Berkeley 192 |
-| Feedback Control Systems | | UC Berkeley 128 |
-| Signals And Systems | | UC Berkeley 120 |
-| Digital Signal Processing | | UC Berkeley 123 |
-| Probability And Random Processes | | UC Berkeley 126 |
-| Introduction To Communication Networks | | UC Berkeley 122 |
-| Optimization Models In Engineering | | UC Berkeley 127 |
-| Medical Imaging Signals And Systems | | UC Berkeley 145B |
-| Electromagnetic Fields And Waves | | UC Berkeley 117 |
-| Power Electronics | | UC Berkeley 113 |
-| Introduction To Electric Power Systems | | UC Berkeley 137A |
-| Introduction To Electric Power Systems | | UC Berkeley 137B |
-| Microelectronic Devices And Circuits | | UC Berkeley 105 |
-| Linear Integrated Circuits | | UC Berkeley 140 |
-| Integrated Circuits For Communications | | UC Berkeley 142 |
-| Integrated-Circuit Devices | | UC Berkeley 130 |
-| Fundamentals Of Photovoltaic Devices | | UC Berkeley 134 |
-| Microfabrication Technology | | UC Berkeley 143 |
-| Introduction To Microelectromechanical Systems(MEMS) | | UC Berkeley 147 |
-| INTRODUCTION TO OPTICAL ENGINEERING | | UC Berkeley 118 |
+### UC Berkeley体系EECS课程列表
 
-## 课程依赖关系
+| 编号 | 课程名称 | 类别 | 备注 |
+| ---- | ---- | ---- | ---- |
+| 16A | Designing Information Devices And Systems I | required | |
+| 16B | DESIGNING INFORMATION DEVICES AND SYSTEMS II | required | |
+| 144 | Fundamental Algorithms For Systems Modeling, Analysis, And Optimization | robotics | |
+| 145L | Introductory Electronic Transducers Laboratory | robotics | |
+| C106A | Introduction To Robotics | robotics | |
+| C106B | Robotic Manipulation And Interaction | robotics | |
+| 149 | Introduction To Embedded Systems | robotics | |
+| 192 | Mechatronic Design Laboratory | robotics | |
+| 128 | Feedback Control Systems | robotics | |
+| 120 | Signals And Systems | signals | |
+| 123 | Digital Signal Processing | signals | |
+| 126 | Probability And Random Processes | signals | |
+| 122 | Introduction To Communication Networks | signals | |
+| 127 | Optimization Models In Engineering | signals | |
+| 145B | Medical Imaging Signals And Systems | signals | |
+| 117 | Electromagnetic Fields And Waves | power | |
+| 113 | Power Electronics | power | |
+| 137A | Introduction To Electric Power Systems | power | |
+| 137B | Introduction To Electric Power Systems | power | |
+| 105 | Microelectronic Devices And Circuits | circuits | |
+| 140 | Linear Integrated Circuits | circuits | |
+| 142 | Integrated Circuits For Communications | circuits | |
+| 130 | Integrated-Circuit Devices | devices | |
+| 134 | Fundamentals Of Photovoltaic Devices | devices | |
+| 143 | Microfabrication Technology | devices | |
+| 147 | Introduction To Microelectromechanical Systems(MEMS) | devices | |
+| 118 | INTRODUCTION TO OPTICAL ENGINEERING | optics | |
 
-### UC Berkeley体系EE课程关系图
+### UC Berkeley体系EECS课程路线图
 ```graphviz
 digraph {
     rankdir=LR;

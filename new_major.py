@@ -41,17 +41,15 @@ if __name__ == "__main__":
             f.write("| ---- | ---- | ---- |\n")
 
             f.write("\n")
-            f.write("## 基础课程\n")
-            f.write("| 课程名称 | 必修/选修 | 备注 |\n")
-            f.write("| ---- | ---- | ---- |\n")
+            f.write("## 课程列表与路线图\n")
 
             f.write("\n")
-            f.write("## 专业课程\n")
-            f.write("| 课程名称 | 必修/选修 | 备注 |\n")
-            f.write("| ---- | ---- | ---- |\n")
+            f.write("### 某校课程列表\n")
+            f.write("| 编号 | 课程名称 | 类别 | 备注 |\n")
+            f.write("| ---- | ---- | ---- | ---- |\n")
 
             f.write("\n")
-            f.write("## 课程依赖关系\n")
+            f.write("### 某校课程路线图\n")
             f.write("```graphviz\n")
             f.write("digraph {}\n")
             f.write("```\n")
