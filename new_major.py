@@ -37,18 +37,18 @@ if __name__ == "__main__":
 
             f.write("\n")
             f.write("## 学科编码\n")
-            f.write("| 学科体系 | 编码 |\n")
-            f.write("| ---- | ---- |\n")
+            f.write("| 学科体系 | 编码 | 备注 |\n")
+            f.write("| ---- | ---- | ---- |\n")
 
             f.write("\n")
             f.write("## 基础课程\n")
-            f.write("| 课程名称 |\n")
-            f.write("| ---- |\n")
+            f.write("| 课程名称 | 必修/选修 | 备注 |\n")
+            f.write("| ---- | ---- | ---- |\n")
 
             f.write("\n")
             f.write("## 专业课程\n")
-            f.write("| 课程名称 |\n")
-            f.write("| ---- |\n")
+            f.write("| 课程名称 | 必修/选修 | 备注 |\n")
+            f.write("| ---- | ---- | ---- |\n")
 
             f.write("\n")
             f.write("## 课程依赖关系\n")
