@@ -9,7 +9,34 @@
       <link>https://mugglewei.github.io/learning_compass/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 10 May 2022 00:11:31 +0800</lastBuildDate><atom:link href="https://mugglewei.github.io/learning_compass/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 May 2022 23:46:45 +0800</lastBuildDate><atom:link href="https://mugglewei.github.io/learning_compass/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>概率论</title>
+      <link>https://mugglewei.github.io/learning_compass/posts/course/%E6%A6%82%E7%8E%87%E8%AE%BA/</link>
+      <pubDate>Tue, 10 May 2022 23:46:45 +0800</pubDate>
+      
+      <guid>https://mugglewei.github.io/learning_compass/posts/course/%E6%A6%82%E7%8E%87%E8%AE%BA/</guid>
+      <description>课程资源    名称 大学/机构 公开课视频链接 课件链接 备注     概率论与数理统计 中国科技大学 网易公开课-中国科技大学-概率论与数理统计      教材习题用书    书名 书号 作者 出版社 备注     概率论引论 ISBN:9787301025581 汪仁官 北京大学出版社    概率论与数理统计 ISBN:9787115422743 同济大学数学系 人民邮电出版社     依赖课程    课程 备注     数学分析, 高等代数 北京大学数学与应用数学课程路线图   数学分析Ⅰ 北京大学信息与计算科学课程路线图    </description>
+    </item>
+    
+    <item>
+      <title>常微分方程</title>
+      <link>https://mugglewei.github.io/learning_compass/posts/course/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/</link>
+      <pubDate>Tue, 10 May 2022 23:22:15 +0800</pubDate>
+      
+      <guid>https://mugglewei.github.io/learning_compass/posts/course/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/</guid>
+      <description>课程资源    名称 大学/机构 公开课视频链接 课件链接 备注     常微分方程 江苏师范大学 网易公开课-江苏师范大学-常微分方程      教材习题用书    书名 书号 作者 出版社 备注     常微分方程 ISBN:9787301323502 柳彬 北京大学出版社    常微分方程教程(第二版) ISBN:9787040143690 丁同仁, 李承治 高等教育出版社     依赖课程    课程 备注     数学分析, 线性代数, 解析几何 常规的先修课程   数学分析Ⅰ 北京大学数学与应用数学课程路线图    </description>
+    </item>
+    
+    <item>
+      <title>复变函数</title>
+      <link>https://mugglewei.github.io/learning_compass/posts/course/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Tue, 10 May 2022 23:01:26 +0800</pubDate>
+      
+      <guid>https://mugglewei.github.io/learning_compass/posts/course/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/</guid>
+      <description>课程资源    名称 大学/机构 公开课视频链接 课件链接 备注     复变函数 西安交通大学 b站-西安交通大学-复变函数     复变函数 华侨大学 网易公开课-华侨大学-复变函数      教材习题用书    书名 书号 作者 出版社 备注     复变函数简明教程 ISBN:9787301085301 谭小江, 伍胜建 北京大学出版社    简明复分析(第2版) ISBN:9787312021695 龚昇 中国科学技术大学出版社     依赖课程    课程 备注     数学分析, 高等代数 北京大学数学与应用数学课程路线图   数学分析Ⅲ 北京大学信息与计算科学课程路线图    </description>
+    </item>
+    
     <item>
       <title>抽象代数</title>
       <link>https://mugglewei.github.io/learning_compass/posts/course/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/</link>
